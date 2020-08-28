@@ -1,0 +1,33 @@
+{
+  "name": "ci_start",
+  "version": "1.0.0",
+  "description": "CI Base",
+  "main": "index.js",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "@popperjs/core": "^2.4.4",
+    "animate.css": "^4.1.0",
+    "bootstrap": "^4.5.0",
+    "glightbox": "^3.0.1",
+    "jquery": "^3.5.1",
+    "jquery-confirm": "^3.3.4",
+    "lightbox2": "^2.11.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hstev/ci_start"
+  },
+  "keywords": [
+    "vield"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hstev/ci_start/issues"
+  },
+  "homepage": "https://github.com/hstev/ci_start#readme"
+}
