@@ -32,6 +32,6 @@
       }
     ?>
     <link rel="shortcut icon" href="assets/img/main/favicon.png">
-    <title>App <?= (isset($tab_name))? "| ".$tab_name : ""; ?></title>
+    <title><?= APP_NAME; ?> <?= (isset($tab_name))? "| ".$tab_name : ""; ?></title>
   </head>
   <body>
