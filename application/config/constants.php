@@ -94,4 +94,8 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 |
 */
 
-defined('APP_NAME')      OR define('APP_NAME', 'APP'); // highest automatically-assigned error code
+defined('APP_NAME') OR define('APP_NAME', 'My Project');
+defined('MANDRILL_PKEY') OR define('MANDRILL_PKEY', 'YOUR_API_KEY_HERE');
+defined('ROUTEE_PKEY') OR define('ROUTEE_PKEY', 'YOUR_API_KEY_HERE');
+defined('ELASTICMAIL_PKEY') OR define('ELASTICMAIL_PKEY', 'YOUR_API_KEY_HERE');
+defined('AWS_PKEY') OR define('AWS_PKEY', 'YOUR_API_KEY_HERE');

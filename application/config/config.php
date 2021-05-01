@@ -23,8 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = '';
-//http://localhost/solucionesstar/escuelas_de_conduccion/
+$config['base_url'] = 'http://localhost/hstev/ci_start/';
 /*
 |--------------------------------------------------------------------------
 | Index File

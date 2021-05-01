@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Streaming extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -23,13 +23,26 @@ class Welcome extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->helper(['url_helper']);
+		$this->load->model('Video_streaming_model');
+		$this->Video_streaming_model->start();
+	   exit;
 		//$this->load->library('session');
 	}
 
 	public function index()
 	{
-		$this->load->view('templates/head.php');
-		$this->load->view('welcome_message');
-		$this->load->view('templates/footer.php');
+	    $this->Video_streaming_model->start();
+	   exit;
+
+	}
+
+	public function video()
+	{
+		$file_url = 'assets/video/7_como_es_tu_historia.mp4';
+		header('Content-Type: application/octet-stream');
+		header("Content-Transfer-Encoding: Binary"); 
+		header("Content-disposition: attachment; filename=\"" . basename($file_url) . "\""); 
+		readfile($file_url); 
+
 	}
 }

@@ -1,16 +1,17 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <base href="<?= base_url(); ?>">
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
 
-    <!--Social media-->
+    <!-- Facebook -->
     <meta property="og:title" content="">
     <meta property="og:description" content="">
     <meta property="og:image" content="">
     <meta property="og:url" content="">
+
+    <!-- Twitter -->
     <meta name="twitter:title" content="">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="">
@@ -23,6 +24,9 @@
     <link rel="stylesheet" href="node_modules/glightbox/dist/css/glightbox.css">
     <link rel="stylesheet" href="assets/css/main/main.css?no_cache=<?= rand(1,10); ?>">
     <?php
+      //manual import by default
+
+      // import by param from controller view
       if(isset($styles) && count($styles) > 0)
       {
         foreach ($styles as $style)

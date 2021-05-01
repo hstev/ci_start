@@ -15,7 +15,9 @@
     <script src="node_modules/glightbox/dist/js/glightbox.min.js"></script>
     <script src="assets/js/main/main.js"></script>
     <?php
-    //load js
+    //import manually
+
+    //import from param controller view
     if (isset($libs) && count($libs) > 0) 
     {
       foreach ($libs as $lib)
